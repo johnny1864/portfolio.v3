@@ -1,0 +1,158 @@
+/* VARIABLES */
+$primary: #31b0d5;
+$black: #000;
+$white: #fff;
+$lblue: #22cdff;
+
+$mobile: 560px;
+$laptop: 960px;
+$desktop: 1200px;
+
+$fonts: 'Roboto', arial, sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $fonts;
+}
+
+body {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+
+  @media screen and (min-width: $laptop) {
+    max-width: 960px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1200px;
+
+    &--large {
+      max-width: 1500px;
+    }
+  }
+}
+
+section,
+.section {
+  padding: 3rem 1.5rem;
+
+  @media screen and (min-width: $laptop) {
+    padding: 5rem 6rem;
+  }
+}
+
+.title {
+  position: relative;
+  font-size: 3em;
+  font-weight: 100;
+  color: $black;
+  margin-bottom: 0.5rem;
+  transform: translateX(45%);
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: $primary;
+    height: 1px;
+    width: 100%;
+    top: 50%;
+    left: calc(-100% - 1rem);
+  }
+
+  @media screen and (min-width: $laptop) {
+    margin-bottom: 1rem;
+    font-size: 2em;
+    transform: unset;
+  }
+}
+
+.bg-primary {
+  background-color: $primary;
+
+  .title {
+    color: white;
+    &::after {
+      background-color: $white;
+    }
+  }
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: 100;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+  &:hover,
+  &.active {
+    color: $black;
+  }
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+.btn {
+  font-weight: bold;
+  padding: 0.25em 1.5em;
+  transition: all 150ms ease;
+  &--outline {
+    color: $primary;
+    background-color: transparent;
+    border: 1px solid $primary;
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+}
+
+.row {
+  .col {
+    margin: 1.5rem 0;
+  }
+  @media screen and (min-width: $laptop) {
+    display: flex;
+
+    .col {
+      width: calc(50% - 3rem);
+      margin: 1.5rem;
+    }
+  }
+}
+
+.col--left {
+  margin-bottom: 1.5rem;
+}
+
+.sub-heading {
+  margin-left: 45%;
+  a {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .sub-heading {
+    margin-left: 0;
+  }
+  .col--left {
+    margin-bottom: 0;
+  }
+  .col--right {
+    width: 50%;
+    margin-left: auto;
+  }
+}

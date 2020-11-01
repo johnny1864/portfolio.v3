@@ -1,0 +1,39 @@
+.hero {
+  position: relative;
+  background-color: $primary;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 15vh solid $white;
+    border-left: 100vw solid transparent;
+  }
+
+  &--cta {
+    position: absolute;
+    bottom: 0;
+    right: 1.5rem;
+  }
+
+  &--content-left {
+    color: $white;
+    padding: 1.5rem 0;
+  }
+
+  &--skills {
+    font-weight: bold;
+  }
+
+  @media screen and (min-width: $laptop) {
+    .container {
+      display: flex;
+    }
+
+    &--cta {
+      right: 15%;
+    }
+  }
+}
