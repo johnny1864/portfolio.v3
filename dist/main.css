@@ -160,23 +160,19 @@ p {
   cursor: pointer;
   overflow: hidden;
   background-color: transparent;
-  background-image: url("./images/arrow.svg");
+  background-image: url("./images/chevron.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   text-indent: 10000px;
   outline: none;
 }
-.slick-arrow:hover {
-  background-color: #fff;
-}
 .slick-arrow.slick-prev {
   left: 1.5rem;
-  transform: rotate(90deg);
+  transform: rotate(-180deg);
 }
 .slick-arrow.slick-next {
   right: 1.5rem;
-  transform: rotate(-90deg);
 }
 .slick-dots {
   list-style-type: none;

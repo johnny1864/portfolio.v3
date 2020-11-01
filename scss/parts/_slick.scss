@@ -12,7 +12,7 @@
     cursor: pointer;
     overflow: hidden;
     background-color: transparent;
-    background-image: url('./images/arrow.svg');
+    background-image: url('./images/chevron.svg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -20,16 +20,16 @@
     outline: none;
 
     &:hover {
-      background-color: $white;
+      // background-color: $white;
     }
 
     &.slick-prev {
       left: 1.5rem;
-      transform: rotate(90deg);
+      transform: rotate(-180deg);
     }
     &.slick-next {
       right: 1.5rem;
-      transform: rotate(-90deg);
+      //transform: rotate(-90deg);
     }
   }
 
