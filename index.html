@@ -67,8 +67,12 @@
         <div class="col--left col">
           <h2 class="heading2 title">About Me</h2>
           <span class="sub-heading">
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/johnny-rivera-6194b670/"
+              >LinkedIn</a
+            >
+            <a target="_blank" href="https://github.com/johnny1864">GitHub</a>
           </span>
         </div>
         <div class="col--right col">
@@ -113,7 +117,38 @@
           <h2 class="heading2 title">Contact Me</h2>
           <div class="sub-heading">Questions? Fill out the form below.</div>
         </div>
-        <div class="col--right col"></div>
+        <div class="col--right col">
+          <form action="" id="contact-me" class="contact-form">
+            <ul>
+              <li class="input-left_half">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" />
+              </li>
+              <li class="input-right_half">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" />
+              </li>
+              <li class="input-left_half">
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+              </li>
+              <li class="input-right_half">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" />
+              </li>
+              <li class="input-full">
+                <label for="message">Message</label>
+                <textarea id="message" rows="7"></textarea>
+              </li>
+              <li class="input-full">
+                <input
+                  type="submit"
+                  class="contact-form__submit btn btn--primary"
+                />
+              </li>
+            </ul>
+          </form>
+        </div>
       </div>
     </section>
 
