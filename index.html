@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./dist/main.css" />
   </head>
   <body>
-    <header class="header" style="display: none">
+    <header class="header">
       <div class="header-brand">
         JohnnyRivera
         <span class="header-brand--sub-heading">
@@ -34,8 +34,10 @@
             Design, Git/Version Control, AJAX, Debugging, DOM manipulation
           </p>
           <p class="hero--skills">
-            JavaScript, JQuery, Angular, Node, AJAX, MongoDB, SQL, PHP, Laravel,
-            WordPress, Shopify, HTML, CSS/SCSS/SASS Bootstrap, Git
+            JavaScript, JQuery, Angular,<br />
+            Node, AJAX, MongoDB, SQL, PHP, <br />
+            WordPress, Shopify, HTML, CSS/SCSS/SASS<br />
+            Bootstrap, Git
           </p>
         </div>
         <div class="hero--content-right">
@@ -94,10 +96,10 @@
     </section>
 
     <section class="projects bg-primary">
-      <div class="container">
+      <div class="container projects-header">
         <h2 class="heading2 title">Projects</h2>
       </div>
-      <div class="container--large">
+      <div class="container container--large">
         <div class="projects--slider">
           <div class="projects--slider__slide">Project 1</div>
           <div class="projects--slider__slide">Project 2</div>
@@ -143,6 +145,7 @@
               <li class="input-full">
                 <input
                   type="submit"
+                  value="Send"
                   class="contact-form__submit btn btn--primary"
                 />
               </li>
@@ -152,7 +155,37 @@
       </div>
     </section>
 
-    <footer></footer>
+    <footer class="bg-primary footer section">
+      <div class="container">
+        <div class="footer-brand">
+          Johnny Rivera
+          <span class="footer-brand--sub-heading">
+            Full-Stack Front-End Web Developer
+          </span>
+        </div>
+        <div class="footer-content__left">
+          <a href="#" class="btn btn--outline btn--arrow btn--white">
+            View Full Resume
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#000"
+                d="M6.741 24L5.25 22.509l10.512-10.515L5.25 1.491 6.741 0 18.75 11.991z"
+              />
+            </svg>
+          </a>
+          <ul class="footer--menu">
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"

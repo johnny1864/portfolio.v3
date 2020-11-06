@@ -8,7 +8,7 @@
     right: 0;
     width: 0;
     height: 0;
-    border-bottom: 15vh solid $white;
+    border-bottom: 20vh solid $white;
     border-left: 100vw solid transparent;
   }
 
@@ -21,6 +21,7 @@
   &--content-left {
     color: $white;
     padding: 1.5rem 0;
+    max-width: 550px;
   }
 
   &--skills {
@@ -28,6 +29,10 @@
   }
 
   @media screen and (min-width: $laptop) {
+    &::before {
+      border-bottom: 25vh solid $white;
+    }
+
     .container {
       display: flex;
     }
