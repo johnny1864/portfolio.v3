@@ -17,11 +17,20 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-brand">
-        JohnnyRivera
-        <span class="header-brand--sub-heading">
-          Full-Stack Front-End Web Developer
-        </span>
+      <div class="container">
+        <div class="header-brand">
+          JohnnyRivera
+          <span class="header-brand--sub-heading">
+            Full-Stack Front-End Web Developer
+          </span>
+        </div>
+
+        <nav></nav>
+        <button class="burger-menu">
+          <span class="burger-menu--container">
+            <span class="burger-menu--icon"></span>
+          </span>
+        </button>
       </div>
     </header>
 
@@ -218,6 +227,10 @@
               },
             },
           ],
+        });
+
+        $('.burger-menu').click(function () {
+          $(this).toggleClass('active');
         });
       });
     </script>
