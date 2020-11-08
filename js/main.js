@@ -15,7 +15,7 @@ jQuery(document).ready(($) => {
           breakpoint: 1200,
           settings: {
             slidesToShow: 3,
-            centerMode: true,
+            // centerMode: true,
           },
         },
       ],
@@ -26,8 +26,7 @@ jQuery(document).ready(($) => {
       $(this).toggleClass('active');
     });
 
-    $(window).on('scroll', function(){
-       
+    $(window).on('scroll', function(){   
         //Adds class 'shrink' to nav on scroll
         if($(window).scrollTop()>70){
             $('header').addClass('scroll');
