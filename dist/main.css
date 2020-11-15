@@ -264,7 +264,7 @@ p {
   cursor: pointer;
   overflow: hidden;
   background-color: transparent;
-  background-image: url("./images/chevron.svg");
+  background-image: url("./images/arrow.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -273,10 +273,11 @@ p {
 }
 .slick-arrow.slick-prev {
   left: 1.5rem;
-  transform: rotate(-180deg);
+  transform: rotate(90deg);
 }
 .slick-arrow.slick-next {
   right: 1.5rem;
+  transform: rotate(-90deg);
 }
 .slick-dots {
   list-style-type: none;
